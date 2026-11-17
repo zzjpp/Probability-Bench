@@ -1,0 +1,11 @@
+[project]
+name = "probability-bench"
+version = "1.0.0"
+description = "Curated Chinese undergraduate probability reasoning benchmark"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.probability-bench]
+canonical-data = "data/items.jsonl"
+validation-command = "python tools/validate.py"
+test-command = "python -m unittest discover -s tests -v"

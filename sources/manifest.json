@@ -1,0 +1,44 @@
+{
+  "document": {
+    "id": "xie-probability-2024-09",
+    "title": "概率论引论",
+    "author": "谢践生",
+    "edition": "2024年09月校稿版",
+    "physical_pages": 452,
+    "sha256": "be3a3652beb0e57859a435adde4ba6740ee7293ae8d7bd3b11a28488fec9729b",
+    "bytes": 7388838,
+    "availability": "user_provided_local_pdf_not_redistributed",
+    "numbered_exercises": 451
+  },
+  "answer_sources": [
+    {
+      "url": "https://www.zhihu.com/column/c_2058612915599626533",
+      "title": "《概率论引论》习题答案",
+      "author": "搁浅的海豚",
+      "status": "column_and_chapter7_read_in_browser",
+      "articles_observed": 13,
+      "compared_exercises": [
+        "7.7",
+        "7.1",
+        "7.3",
+        "7.5",
+        "7.11",
+        "7.12",
+        "7.13",
+        "7.15",
+        "7.21",
+        "7.24"
+      ],
+      "note": "Only explicitly listed per-item comparisons are claimed. No wholesale copying or assumption that community answers are correct."
+    },
+    {
+      "url": "https://www.bilibili.com/video/BV1isGx6NEBU/",
+      "title": "谢践生概率论引论答案",
+      "author": "i44统计考研",
+      "duration_seconds": 25,
+      "status": "metadata_and_sample_frame_observed_not_item_verified",
+      "compared_exercises": [],
+      "note": "A short preview was accessible; no complete per-exercise answer transcript was verified. Not used as gold answers."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "zero-bias-goldstein-reinert": {
+    "title": "Stein's Method and the Zero Bias Transformation with Application to Simple Random Sampling",
+    "url": "https://arxiv.org/pdf/math/0510619",
+    "locator": "Lemma 2.1(1)–(2), PDF pp.4–5",
+    "scope": "零偏密度与中心正态不动点，参考解答仍由项目独立论证。"
+  },
+  "brown-bridge-aldous": {
+    "title": "David Aldous, STAT150 Lecture 32",
+    "url": "https://www.stat.berkeley.edu/~aldous/150/Lectures/lecture_32_post.pdf",
+    "locator": "PDF p.3",
+    "scope": "Brown桥线性表示、协方差与端点独立；路径条件律版本由本项目补足。"
+  },
+  "lognormal-lin-stoyanov": {
+    "title": "Lin and Stoyanov, The logarithmic skew-normal distributions are moment-indeterminate",
+    "url": "https://web.williams.edu/Mathematics/sjmiller/public_html/342/handouts/LinStoyanov_LogSkewNormalDistrAreMomentIndeterminate.pdf",
+    "locator": "PDF pp.6–7, vanishing-moment perturbation",
+    "scope": "核对正弦型零矩扰动的机制；本题采用2π而非文中π，逐阶积分已独立验证。"
+  }
+}

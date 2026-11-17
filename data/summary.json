@@ -1,0 +1,47 @@
+{
+  "n_items": 81,
+  "n_source_exercises_selected": 84,
+  "n_source_exercises_indexed": 451,
+  "selection": "curated_core_not_full_book",
+  "difficulty": {
+    "L1": 4,
+    "L2": 12,
+    "L3": 22,
+    "L4": 16,
+    "L5": 10,
+    "L6": 13,
+    "L7": 3,
+    "L8": 1
+  },
+  "subjects": {
+    "信息与熵": 3,
+    "可测性与积分": 6,
+    "期望与矩": 6,
+    "条件期望": 10,
+    "概率不等式": 7,
+    "概率空间与测度": 3,
+    "特征函数": 6,
+    "独立性与条件概率": 6,
+    "矩问题": 2,
+    "离散分布": 1,
+    "组合计数": 2,
+    "组合计数与生成函数": 1,
+    "连续分布": 8,
+    "随机变量与分布": 8,
+    "随机收敛": 10,
+    "随机数生成": 1,
+    "随机过程": 1
+  },
+  "splits": {
+    "dev": 14,
+    "test": 55,
+    "validation": 12
+  },
+  "fully_solved": 81,
+  "human_verified": 0,
+  "external_answer_compared": 10,
+  "empirical_difficulty_calibration": "not_run",
+  "model_benchmark_results": "not_run",
+  "itemwise_mathematical_reviewed": 81,
+  "difficulty_basis": "structural_three_axis_v1_not_empirically_calibrated"
+}

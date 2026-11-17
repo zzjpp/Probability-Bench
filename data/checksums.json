@@ -1,0 +1,16 @@
+{
+  "data/inputs/all.jsonl": "9a8abe29920d85dbd82c431b984127be1666bd0f19b07e679d521da31907c816",
+  "data/inputs/dev.jsonl": "9c64b0ab15428e5201b3b282d88f2b3009bbab951e2f1716ddb8732297ace143",
+  "data/inputs/test.jsonl": "e2929253e51472ac2bce9ee730cca094d552eedbfd469f2d2de51a665d4e5b12",
+  "data/inputs/validation.jsonl": "b85b9fe6d1d2947428bb0defbd93b115757f0bcf2059198818d9683cfa4a5b71",
+  "data/items.jsonl": "c0efbc60f97422f087c43cef540cb454387976175fc825d23d0d56a4006079a2",
+  "data/questions.tex": "939429590fbedc8db49e831676a4d1e7fa87127a120eadbb85babd4e1dc41e1e",
+  "data/splits/dev.jsonl": "85394153be041ff39d53782d876f491b6a86d8c363aad25e03de1d089296195d",
+  "data/splits/test.jsonl": "2cdc8b6bac4c879fc6fd2f47865bd51bd36acc7c96ca3590696d7643dbec6efa",
+  "data/splits/validation.jsonl": "2266a5b278b6f88f6b8962f7f0a6771e31c55ab7eb18097e189bd8eba6840a3c",
+  "data/summary.json": "79a3e2fcec4d18b8a70feef864cc924783760f2ba826cedcb474860058525d5f",
+  "schema/item.schema.json": "a96d186df54de232a7858ac8529d9fbe6ea2f6108ef594ea18376e11d7903479",
+  "sources/exercise_index.jsonl": "4152e84b170230015e0580394a66acb0c6b8bd354e9a53086a474e2f3bb45ac4",
+  "sources/manifest.json": "2ca757f7073e643879962c85635c1909afe2e0664dbbd464ebd34a56fe8c0e1c",
+  "sources/mathematical_references.json": "a5c8d521463ca4e5624c34f6e5061464c7f79159b506660c85928f56c68a2dd6"
+}

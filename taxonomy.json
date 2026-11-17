@@ -1,0 +1,53 @@
+{
+  "abilities": {
+    "Mathematical Knowledge": "数学知识掌握",
+    "Mathematical Computation": "数学计算能力",
+    "Mathematical Reasoning": "数学推理能力",
+    "Mathematical Proof": "数学证明能力",
+    "Mathematical Generalization": "数学迁移能力"
+  },
+  "difficulty_levels": {
+    "1": "直接应用",
+    "2": "常规计算",
+    "3": "多步应用",
+    "4": "综合推理",
+    "5": "关键技巧",
+    "6": "深入证明",
+    "7": "复杂构造与综合",
+    "8": "高阶挑战"
+  },
+  "difficulty_descriptors": {
+    "1": "识别定义或直接使用一个标准公式，计算链短。",
+    "2": "标准方法明确，需若干计算或一次常规变换。",
+    "3": "需选择并衔接多个常规步骤，检查适用条件。",
+    "4": "跨知识点综合，含辅助量、误差控制或非直接推导。",
+    "5": "有明显方法发现门槛，需关键构造或细致论证。",
+    "6": "较长的证明链、边界处理或非平凡反例和最优性论证。",
+    "7": "复杂构造、多层分类或跨方法综合，完整性要求高。",
+    "8": "高阶理论与非直接构造结合，含锐界、反演或多阶段全局论证。"
+  },
+  "generalization": "Proxy labels only; true transfer needs a separate controlled study",
+  "difficulty_status": "structurally_reviewed_uncalibrated",
+  "difficulty_scope": "按题面实际给出的提示和逐题前置知识评定结构难度；未进行模型/学生作答率校准，不能与其他题库同名等级直接比较。",
+  "difficulty_model": {
+    "id": "structural_three_axis_v1",
+    "formula": "difficulty = 1 + method_discovery + reasoning_depth + technical_control",
+    "method_discovery": {
+      "0": "题面已指明路线，或仅须定义代入。",
+      "1": "选择一个标准概率或分析工具。",
+      "2": "发现题面未直接给出的关键表示、辅助量或截断/对称化构造。",
+      "3": "自行设计满足全阶或整类函数约束的非常规新分布；不能仅凭高阶术语取3。"
+    },
+    "reasoning_depth": {
+      "0": "一个核心论证即可；重复同类代入不抬高深度。",
+      "1": "几个相连步骤或两个实质子目标。",
+      "2": "多个实质引理或多段独立子目标必须衔接。"
+    },
+    "technical_control": {
+      "0": "有限计算和直接条件代入足够。",
+      "1": "有一类实质极限、积分交换、异常零集、边界或尾部条件须验证。",
+      "2": "多重无限操作、生成类延拓、整类函数/路径核或扩展值合法性需联合控制。"
+    },
+    "interpretation": "这是审题一致性的工作性规则，分值与等级均未被经验数据验证；不把三个轴当作心理计量量表。"
+  }
+}

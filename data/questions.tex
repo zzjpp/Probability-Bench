@@ -1,0 +1,248 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\section*{Probability-Bench：核心习题}
+\subsection*{PROB-XJS-02-004（L6，原书 2.4）}
+设 $T_n$ 为 $n$ 元集合的划分数，$T_0=1$。证明 $T_{n+1}=\sum_{k=0}^n\binom nkT_k$，并证明 $T_n=e^{-1}\sum_{j=0}^\infty j^n/j!$（$n=0$ 时约定 $0^0=1$）以及 $\sum_{n\ge0}T_nx^n/n!=\exp(e^x-1)$。
+
+\subsection*{PROB-XJS-02-005（L1，原书 2.5）}
+长度为 $n$ 的二进制序列中，至少有 $k$ 个分量为 $1$ 的序列共有多少个？其中 $1\le k\le n$。
+
+\subsection*{PROB-XJS-02-007（L3，原书 2.7）}
+用组合计数证明：对正整数 $n$，$(n^2)!$ 能被 $(n!)^{n+1}$ 整除。
+
+\subsection*{PROB-XJS-02-008（L5，原书 2.8）}
+设非空集合 $\Omega$ 上的 $\sigma$-代数 $\mathcal F$ 只有有限个集合。证明存在有限个非空、两两不交的集合 $E_1,\ldots,E_m$，其并为 $\Omega$，且 $\mathcal F$ 恰为这些集合的一切并。因此 $|\mathcal F|=2^m$。
+
+\subsection*{PROB-XJS-02-021（L3，原书 2.21）}
+对任意两个事件 $A,B$，证明 $|\mathbb P(A\cap B)-\mathbb P(A)\mathbb P(B)|\le1/4$，并给出取等号的例子。
+
+\subsection*{PROB-XJS-02-023（L2，原书 2.23）}
+记 $A\triangle B=(A\setminus B)\cup(B\setminus A)$。证明 $\mathbb P(A\triangle B)\le\mathbb P(A\triangle C)+\mathbb P(C\triangle B)$。
+
+\subsection*{PROB-XJS-02-025（L2，原书 2.25）}
+证明任意 $n$ 个事件满足 $\mathbb P(\bigcap_{i=1}^n A_i)\ge\sum_{i=1}^n\mathbb P(A_i)-(n-1)$。
+
+\subsection*{PROB-XJS-02-027（L6，原书 2.27）}
+设 $A_1,A_2,\ldots$ 是同一概率空间 $(\Omega,\mathcal F,\mathbb P)$ 上的事件。证明以下三条件等价：(i) 对任意 $i\ne j$，$\mathbb P(A_i\cap A_j)=0$；(ii) 存在 $\Gamma\in\mathcal F$、$\mathbb P(\Gamma)=0$，使 $A_n\setminus\Gamma$ 两两不交；(iii) $\mathbb P(\bigcup_{n\ge1}A_n)=\sum_{n\ge1}\mathbb P(A_n)$。
+
+\subsection*{PROB-XJS-03-011（L3，原书 3.11）}
+构造三个两两独立但不相互独立的事件，并验证全部条件。
+
+\subsection*{PROB-XJS-03-012（L2，原书 3.12）}
+事件 $A,B$ 相互独立，且 $\mathbb P(A\setminus B)=\mathbb P(B\setminus A)=1/4$。求 $\mathbb P(A)$ 与 $\mathbb P(B)$。
+
+\subsection*{PROB-XJS-03-013（L1，原书 3.13）}
+事件 $A$ 与概率空间中的每个事件都独立。证明 $\mathbb P(A)\in\{0,1\}$。
+
+\subsection*{PROB-XJS-03-014（L2，原书 3.14）}
+设 $0<\mathbb P(A)<1$。证明 $\mathbb P(B\mid A)=\mathbb P(B\mid A^c)$ 当且仅当 $A,B$ 独立。
+
+\subsection*{PROB-XJS-03-015（L3，原书 3.15）}
+事件 $A,B$ 独立且 $\mathbb P(A)+\mathbb P(B)=1$。求条件概率 $\mathbb P(A\triangle B\mid A\cup B)$ 的取值范围。
+
+\subsection*{PROB-XJS-04-003（L1，原书 4.3）}
+设 $E$ 是拓扑空间，$\mathcal B(E)$ 是其 Borel $\sigma$-代数。证明每个连续函数 $f:E\to\mathbb R$ 都是 Borel 可测的。
+
+\subsection*{PROB-XJS-04-006（L6，原书 4.6）}
+设 $(\Omega,\mathcal F,\mu)$ 是测度空间，$1\le p<\infty$，$L^p(\mu)$ 为满足 $\int |f|^p d\mu<\infty$ 的实可测函数按几乎处处相等认同所得的空间，$\|f\|_p=(\int |f|^p d\mu)^{1/p}$。证明：(1) 共轭指数 $q$ 下的 Hölder 不等式 $\|fg\|_1\le\|f\|_p\|g\|_q$（$p=1$ 时 $q=\infty$，无穷范数为本质上确界）；(2) Minkowski 不等式，并验证 $\|\cdot\|_p$ 的定义与代表元无关、绝对齐次且正定；(3) $L^p(\mu)$ 在此范数下完备。
+
+\subsection*{PROB-XJS-04-009（L5，原书 4.9）}
+设 $\mu$ 为有限测度，$f\in L^\infty(\mu)$ 且 $M=\|f\|_\infty>0$。证明 $\|f\|_p\to M$，并证明 $\int |f|^{p+1}d\mu/\int |f|^p d\mu\to M$，其中 $p\to\infty$。
+
+\subsection*{PROB-XJS-04-011（L3，原书 4.11）}
+设 $1\le p_1<p<p_2<\infty$，$0<\alpha<1$ 且 $1/p=\alpha/p_1+(1-\alpha)/p_2$。证明 $\|f\|_p\le\|f\|_{p_1}^{\alpha}\|f\|_{p_2}^{1-\alpha}$，其中 $f\in L^{p_1}\cap L^{p_2}$。
+
+\subsection*{PROB-XJS-04-014（L3，原书 4.14）}
+设 $f_n,f\ge0$ 均属于 $L^1(\mu)$，$f_n\to f$ 几乎处处且 $\int f_n d\mu\to\int f d\mu$。证明 $\|f_n-f\|_1\to0$（Scheffé 引理）。
+
+\subsection*{PROB-XJS-04-015（L5，原书 4.15）}
+对 $0<x<1$，令 $F(x)=\sum_{n=0}^{\infty}x^n\log\frac{1+x^n}{1+x^{n+1}}$。证明级数收敛并计算 $\lim_{x\uparrow1}F(x)$ 以及 $\lim_{x\uparrow1}\prod_{n=0}^{\infty}\left(\frac{1+x^{n+1}}{1+x^n}\right)^{x^n}$。
+
+\subsection*{PROB-XJS-05-001（L1，原书 5.1）}
+设 $(\Omega,\mathcal F,\mathbb P)$ 是概率空间，$A\subseteq\Omega$ 是任意子集。证明指标函数 $\mathbf1_A:\Omega\to\mathbb R$ 是随机变量，当且仅当 $A\in\mathcal F$。
+
+\subsection*{PROB-XJS-05-003（L3，原书 5.3）}
+设 $X_1,X_2,\ldots$ 是随机变量，$\tau$ 是有限的非负整数值随机变量，$S_0=0$，$S_n=\sum_{i=1}^nX_i$。证明 $S_\tau$ 是随机变量；不假设 $\tau$ 是停时。
+
+\subsection*{PROB-XJS-05-004（L4，原书 5.4）}
+证明实线上连续的分布函数 $F$ 一致连续。
+
+\subsection*{PROB-XJS-05-005（L2，原书 5.5）}
+设 $F$ 为随机变量 $X$ 的分布函数。证明 $F$ 在 $a$ 连续当且仅当 $\mathbb P(X=a)=0$。
+
+\subsection*{PROB-XJS-05-007（L3，原书 5.7）}
+设 $D$ 是 $\mathbb R$ 的稠密子集。证明分布函数在 $D$ 上的取值唯一确定整个分布函数。
+
+\subsection*{PROB-XJS-05-008（L4，原书 5.8）}
+若某分布函数 $F$ 满足 $\mathbb P(X\le x,Y\le y)=F(\min(x,y))$ 对所有实数 $x,y$ 成立，证明 $X=Y$ 几乎处处。
+
+\subsection*{PROB-XJS-05-014（L3，原书 5.14）}
+设 $n\ge1$ 为整数。甲、乙分别独立投掷公平硬币 $n$ 次，所有投掷相互独立。求两人所得正面次数相同的概率，并给出论证。
+
+\subsection*{PROB-XJS-05-015（L2，原书 5.15）}
+设 $X_0,X_1,I$ 相互独立，$X_j$ 的分布函数为 $F_j$，$I\sim\mathrm{Bernoulli}(p)$，$0<p<1$。求 $X_I$ 的分布函数。
+
+\subsection*{PROB-XJS-06-003（L2，原书 6.3）}
+设整数 $a<b$，$X$ 在 $\{a+1,\ldots,b\}$ 上均匀分布。求均值和方差。
+
+\subsection*{PROB-XJS-06-008（L4，原书 6.8）}
+设 $F$ 是任意分布函数，$a>0$。证明 $\int_{\mathbb R}[F(x+a)-F(x)]\,dx=a$。
+
+\subsection*{PROB-XJS-06-011（L3，原书 6.11）}
+对实值随机变量 $X$ 及 $p>0$，证明 $\mathbb E|X|^p=\int_0^\infty pt^{p-1}\mathbb P(|X|>t)\,dt$；允许两端同时为无穷。
+
+\subsection*{PROB-XJS-06-021（L3，原书 6.21）}
+设 $X_1,\ldots,X_n$ 相互独立，$0<\sigma_i^2=\operatorname{Var}(X_i)<\infty$。在 $p_i\ge0$、$\sum_i p_i=1$ 下，求使 $\operatorname{Var}(\sum_i p_i X_i)$ 最小的权重和最小值。
+
+\subsection*{PROB-XJS-06-035（L2，原书 6.35）}
+设 $X\sim\operatorname{Poisson}(\lambda)$，$\lambda>0$。对任意取有限非负值的函数 $g:\mathbb Z_{\ge0}\to[0,\infty)$，证明 $\mathbb E[Xg(X)]=\lambda\mathbb E[g(X+1)]$；允许两边的期望同时为 $+\infty$。
+
+\subsection*{PROB-XJS-06-038（L4，原书 6.38）}
+设 $f,g:\mathbb R\to\mathbb R$ 是有界、单调递增的可测函数，$X$ 是任意实随机变量。证明 $\operatorname{Cov}(f(X),g(X))\ge0$。
+
+\subsection*{PROB-XJS-07-001（L5，原书 7.1）}
+设 $X,Y$ 独立同分布。证明 $\mathbb E[(X-Y)^2]<\infty$ 当且仅当 $\mathbb E[X^2]<\infty$。
+
+\subsection*{PROB-XJS-07-003（L4，原书 7.3）}
+设 $X,Y$ 独立同分布，分布函数为 $F$。证明 $\mathbb E|X-Y|=2\int_{\mathbb R}F(t)(1-F(t))dt$，允许两端无穷。若 $m$ 是中位数，即 $F(m)\ge1/2$、$F(m-)\le1/2$，再证明 $\mathbb E|X-m|\le\mathbb E|X-Y|$。
+
+\subsection*{PROB-XJS-07-005（L4，原书 7.5）}
+设 $X$ 可积，$m$ 为其中位数。证明 $\mathbb E|X-m|\le\mathbb E|X-y|$ 对每个 $y\in\mathbb R$ 成立；若 $Y$ 与 $X$ 独立，再证明 $\mathbb E|X-m|\le\mathbb E|X-Y|$，不要求 $Y$ 可积。
+
+\subsection*{PROB-XJS-07-007（L2，原书 7.7）}
+设 $X,Y$ 独立同分布且可积。证明 $\mathbb E|X-\mathbb EX|\le\mathbb E|X-Y|$。
+
+\subsection*{PROB-XJS-07-011（L6，原书 7.11）}
+独立、反复投掷公平硬币。分别求首次在连续记录中出现 HHH、HTH、HTHTH 所需投掷次数的期望，并给出严格计算。
+
+\subsection*{PROB-XJS-07-012（L4，原书 7.12）}
+设 $X_1,X_2,\ldots$ 独立同分布，非负整数值随机变量 $\tau$ 与整个 $\sigma(X_1,X_2,\ldots)$ 独立。假设 $\mathbb E|X_1|<\infty$、$\mathbb E\tau<\infty$，令 $S_0=0$、$S_n=\sum_{i=1}^nX_i$。证明 $\mathbb ES_\tau=\mathbb E\tau\,\mathbb EX_1$。若再有 $\mathbb EX_1^2<\infty$、$\mathbb E\tau^2<\infty$，证明 $\operatorname{Var}(S_\tau)=\mathbb E\tau\operatorname{Var}(X_1)+(\mathbb EX_1)^2\operatorname{Var}(\tau)$。
+
+\subsection*{PROB-XJS-07-013（L6，原书 7.13）}
+设 $X_1,X_2,\ldots$ 独立同分布且可积，$\overline X_n=n^{-1}\sum_{i=1}^nX_i$，$\mathcal G_n=\sigma(\overline X_\ell:\ell\ge n)$。证明 $\mathbb E[X_j\mid\mathcal G_n]=\overline X_n$ 对 $1\le j\le n$ 成立，并推出 $\mathbb E[\overline X_m\mid\mathcal G_n]=\overline X_n$（$m\le n$）及 $\mathbb E[X_1\mid\overline X_n]=\overline X_n$。
+
+\subsection*{PROB-XJS-07-015（L3，原书 7.15）}
+对固定 $n\ge1$，观察独立 Bernoulli($p$) 样本 $X_1,\ldots,X_n$，$0<p<1$。证明不存在不依赖 $p$ 的实值统计量 $T(X_1,\ldots,X_n)$，使 $\mathbb E_pT=1/p$ 对所有 $p\in(0,1)$ 成立。
+
+\subsection*{PROB-XJS-07-021（L5，原书 7.21）}
+设 $\mathcal G_1,\mathcal G_2,\mathcal G_3$ 是概率空间上的子 $\sigma$-代数，且 $\mathcal G_1\vee\mathcal G_2$ 与 $\mathcal G_3$ 独立。若 $f$ 是可积的 $\mathcal G_1$ 可测随机变量，证明 $\mathbb E[f\mid\mathcal G_2\vee\mathcal G_3]=\mathbb E[f\mid\mathcal G_2]$。
+
+\subsection*{PROB-XJS-07-024（L3，原书 7.24）}
+设 $Y\in L^2$、$\mathcal G$ 是子 $\sigma$-代数。定义 $\operatorname{Var}(Y\mid\mathcal G)=\mathbb E[(Y-\mathbb E[Y\mid\mathcal G])^2\mid\mathcal G]$。证明 $\operatorname{Var}(Y)=\mathbb E\operatorname{Var}(Y\mid\mathcal G)+\operatorname{Var}(\mathbb E[Y\mid\mathcal G])$。
+
+\subsection*{PROB-XJS-08-001（L5，原书 8.1）}
+设 $X_1,X_2$ 独立，分别服从形状参数 $\alpha_1,\alpha_2>0$、共同速率 $\lambda>0$ 的 Gamma 分布，密度为 $\lambda^\alpha x^{\alpha-1}e^{-\lambda x}/\Gamma(\alpha)$（$x>0$）。令 $S=X_1+X_2$、$U=X_1/(X_1+X_2)$。求 $(S,U)$ 的联合分布，证明独立性，并求 $R=X_1/X_2$ 的密度以及 $S,R$ 的独立性。
+
+\subsection*{PROB-XJS-08-012（L4，原书 8.12）}
+设 $Z_1,Z_2$ 独立标准正态，$R=\sqrt{Z_1^2+Z_2^2}$。当 $R>0$ 时取 $\Theta\in[0,2\pi)$ 满足 $Z_1=R\cos\Theta$、$Z_2=R\sin\Theta$；当 $R=0$ 时令 $\Theta=0$。求 $R,\Theta$ 的分布并证明独立，进一步求 $R^2$ 的分布。
+
+\subsection*{PROB-XJS-08-013（L3，原书 8.13）}
+设非负随机变量 $X$ 具有绝对连续分布，生存函数 $S(t)=\mathbb P(X>t)>0$ 对全部 $t\ge0$ 成立。若风险率 $h(t)=f_X(t)/S(t)=\lambda>0$ 几乎处处成立，证明 $X\sim\operatorname{Exp}(\lambda)$。
+
+\subsection*{PROB-XJS-08-016（L5，原书 8.16）}
+设 $X\sim N(0,1)$。证明存在 $a>0$，使 $Y=-X$（$|X|\le a$ 时）、$Y=X$（$|X|>a$ 时）仍服从标准正态，且 $\operatorname{Cov}(X,Y)=0$，但 $X,Y$ 不独立。
+
+\subsection*{PROB-XJS-08-020（L2，原书 8.20）}
+设 $X_1,X_2,\ldots$ 是同一概率空间上独立同分布的标准 Cauchy 随机变量，$\overline X_n=n^{-1}\sum_{k=1}^nX_k$。求 $\overline X_n$ 的分布，并判断它是否依概率趋于 $0$。可使用标准 Cauchy 的特征函数 $e^{-|t|}$。
+
+\subsection*{PROB-XJS-08-023（L5，原书 8.23）}
+设 $U_1,U_2,\ldots$ 独立服从 $U(0,1)$，$N_x=\inf\{n\ge1:U_1+\cdots+U_n>x\}$，$0\le x\le1$。求 $\mathbb E N_x$ 并证明。
+
+\subsection*{PROB-XJS-08-026（L3，原书 8.26）}
+设 $X\sim N(0,\sigma^2)$，$\sigma>0$。对绝对连续且导数有界的函数 $f:\mathbb R\to\mathbb R$，证明 $\mathbb E[Xf(X)]=\sigma^2\mathbb E[f'(X)]$，其中导数按几乎处处意义取值。
+
+\subsection*{PROB-XJS-08-030（L4，原书 8.30）}
+设 $X_1,\ldots,X_{2n}$ 独立标准正态，$n\ge1$。求 $U_n=\frac{\sum_{k=1}^nX_{2k-1}X_{2k}}{\sqrt{\sum_{k=1}^nX_{2k}^2}}$ 的分布；分母为零的零概率事件上可任意定义。
+
+\subsection*{PROB-XJS-09-003（L3，原书 9.3）}
+设 $X$ 为离散随机变量，$Y$ 为无原子的实值随机变量；不假设二者独立。证明对任意常数 $c$，$\mathbb P(X=Y+c)=0$。
+
+\subsection*{PROB-XJS-09-004（L3，原书 9.4）}
+设实值随机变量 $X,Y$ 独立，且 $X$ 的分布函数连续。证明 $\mathbb P(X=Y)=0$。
+
+\subsection*{PROB-XJS-09-005（L2，原书 9.5）}
+给定 $U\sim U(0,1)$，构造标准指数分布随机变量，并证明构造正确。
+
+\subsection*{PROB-XJS-10-002（L4，原书 10.2）}
+证明随机变量列 $X_n$ 依概率收敛到 $0$ 当且仅当 $\mathbb E[|X_n|/(1+|X_n|)]\to0$。
+
+\subsection*{PROB-XJS-10-004（L2，原书 10.4）}
+若某个 $p>1$ 满足 $C:=\sup_{\alpha\in I}\mathbb E|X_\alpha|^p<\infty$，证明族 $\{X_\alpha\}$ 一致可积。
+
+\subsection*{PROB-XJS-10-006（L3，原书 10.6）}
+设存在可积非负随机变量 $Y$，使对每个 $\alpha\in I$，$|X_\alpha|\le Y$ 几乎处处成立（不同 $\alpha$ 可以有不同的异常零集）。证明 $\{X_\alpha:\alpha\in I\}$ 一致可积。
+
+\subsection*{PROB-XJS-10-007（L3，原书 10.7）}
+非负随机变量列满足 $X_{n+1}\le X_n$ 几乎处处，且 $X_n\to0$ 依概率。证明 $X_n\to0$ 几乎处处。
+
+\subsection*{PROB-XJS-10-015（L4，原书 10.15）}
+设 $U_1,U_2,\ldots$ 独立同分布于 $U(0,1)$，$M_n=\min_{1\le k\le n}U_k$。证明 $M_n\to0$ 几乎处处，且 $nM_n$ 依分布收敛于参数1的指数分布。
+
+\subsection*{PROB-XJS-10-021（L5，原书 10.21）}
+设 $X_n\Rightarrow X$、$Y_n\to c\in\mathbb R$ 依概率，不假定 $X_n,Y_n$ 独立。证明 Slutsky 引理：$X_n+Y_n\Rightarrow X+c$、$X_nY_n\Rightarrow cX$；当 $c\ne0$ 时再证明 $Q_n\Rightarrow X/c$，其中在 $Y_n\ne0$ 时 $Q_n=X_n/Y_n$，在 $Y_n=0$ 时约定 $Q_n=0$。
+
+\subsection*{PROB-XJS-10-026（L4，原书 10.26）}
+设 $X_1,X_2,\ldots$ 独立服从速率1的指数分布，$M_n=\max_{k\le n}X_k$。证明 $M_n\to\infty$ 几乎处处，$M_n-\log n\Rightarrow G$，其中 $\mathbb P(G\le x)=\exp(-e^{-x})$；并证明 $M_n/\log n\to1$ 依概率（$n\ge2$）。
+
+\subsection*{PROB-XJS-10-027（L3，原书 10.27）}
+设 $X_n\sim\operatorname{Bin}(n,p_n)$，$np_n\to\lambda>0$。证明 $X_n\Rightarrow\operatorname{Poisson}(\lambda)$。
+
+\subsection*{PROB-XJS-10-032（L6，原书 10.32）}
+设 $X_1,X_2,\ldots$ 独立服从速率1的指数分布。证明 $\max_{k\le n}X_k/\log n\to1$ 几乎处处，并明确 Borel–Cantelli 引理如何使用。
+
+\subsection*{PROB-XJS-10-045（L4，原书 10.45）}
+给定 $a>0$、$p\in(0,1)$，证明在 $\mathbb E X^2=a^2p$ 的随机变量中，$a^2\mathbb P(|X|\ge a)/\mathbb E X^2$ 的上确界为1。另一方面，对任意固定满足 $0<\mathbb E X^2<\infty$ 的 $X$，证明 $a^2\mathbb P(|X|\ge a)/\mathbb E X^2\to0$（$a\to\infty$）。
+
+\subsection*{PROB-XJS-10-048（L4，原书 10.48）}
+若 $\mathbb EX=0$、$\operatorname{Var}(X)=1$，证明对 $x>0$ 有 $\mathbb P(X\ge x)\le1/(1+x^2)$，并证明该界最优。
+
+\subsection*{PROB-XJS-10-050（L7，原书 10.50）}
+设事件列满足 $\sum_{n\ge1}\mathbb P(A_n)=\infty$，并令 $\alpha=\limsup_{n\to\infty}\frac{(\sum_{k=1}^n\mathbb P(A_k))^2}{\sum_{i,j\le n}\mathbb P(A_i\cap A_j)}$（分母对充分大的 $n$ 为正）。证明 $\mathbb P(\bigcap_{m\ge1}\bigcup_{n\ge m}A_n)\ge\alpha$，即 Kochen–Stone 下界，不假定事件独立。
+
+\subsection*{PROB-XJS-10-052（L6，原书 10.52）}
+先证明 Hoeffding 引理：若 $a,b$ 为有限实数、$a\le b$，$\mathbb EX=0$ 且 $a\le X\le b$ 几乎处处，则 $\mathbb Ee^{tX}\le e^{t^2(b-a)^2/8}$ 对任意 $t\in\mathbb R$ 成立。再设有限个随机变量 $X_i$ 相互独立，$a_i\le X_i\le b_i$ 几乎处处，且 $a_i,b_i$ 为有限实数。令 $S=\sum_iX_i$、$D=\sum_i(b_i-a_i)^2$。对 $u>0$、$D>0$，证明 $\mathbb P(S-\mathbb ES\ge u)\le e^{-2u^2/D}$ 及 $\mathbb P(S-\mathbb ES\le-u)\le e^{-2u^2/D}$，并单独说明 $D=0$ 时两侧尾概率。
+
+\subsection*{PROB-XJS-10-068（L4，原书 10.68）}
+设 $f\in C[0,1]$，$B_n(p)=\sum_{k=0}^n f(k/n)\binom nkp^k(1-p)^{n-k}$。用概率方法证明 $B_n$ 是多项式且 $\sup_{p\in[0,1]}|B_n(p)-f(p)|\to0$，即 Bernstein 对 Weierstrass 逼近定理的证明。
+
+\subsection*{PROB-XJS-11-004（L3，原书 11.4）}
+若 $f,g$ 是特征函数，$0<p<1$，证明 $fg$、$pf+(1-p)g$、$\overline f$、$\operatorname{Re}f$ 和 $|f|^2$ 也都是特征函数。
+
+\subsection*{PROB-XJS-11-006（L5，原书 11.6）}
+设 $\varphi(t)=\mathbb Ee^{itX}$。证明 $\lim_{T\to\infty}(2T)^{-1}\int_{-T}^Te^{-iat}\varphi(t)dt=\mathbb P(X=a)$，以及 $\lim_{T\to\infty}(2T)^{-1}\int_{-T}^T|\varphi(t)|^2dt=\sum_{a:\mathbb P(X=a)>0}\mathbb P(X=a)^2$。
+
+\subsection*{PROB-XJS-11-016（L3，原书 11.16）}
+设 $X_n\sim\operatorname{Poisson}(\lambda_n)$，$\lambda_n>0$ 且 $\lambda_n\to\infty$。用特征函数证明 $(X_n-\lambda_n)/\sqrt{\lambda_n}\Rightarrow N(0,1)$。
+
+\subsection*{PROB-XJS-11-025（L6，原书 11.25）}
+设 $\varphi_n$ 为实值随机变量 $X_n$ 的特征函数。若存在 $\varepsilon>0$，使 $\varphi_n(t)\to1$ 对所有 $|t|\le\varepsilon$ 成立，证明 $X_n\to0$ 依概率。
+
+\subsection*{PROB-XJS-11-033（L6，原书 11.33）}
+设 $\xi_0,\xi_1,\ldots$ 独立且各以 $1/2$ 概率取 $\pm1$。令 $X_1=\xi_0$，对 $r\ge0$、$1\le j\le2^r$ 递归定义 $X_{2^r+j}=\xi_{r+1}X_j$。证明 $(X_n)$ 两两独立同分布、均值0方差1；对 $S_n=\sum_{k=1}^nX_k$ 求 $S_{2^r}$ 的分布，并证明 $S_n/\sqrt n$ 不趋标准正态。
+
+\subsection*{PROB-XJS-11-034（L8，原书 11.34）}
+设 $\mathbb EX=0$、$0<\sigma^2=\mathbb EX^2<\infty$。允许扩张原概率空间，构造随机变量 $X^*$，使对每个在有界区间上绝对连续、且导数本质有界的函数 $f:\mathbb R\to\mathbb R$，都有 $\mathbb E[Xf(X)]=\sigma^2\mathbb E[f'(X^*)]$。求 $X^*$ 的密度，并验证中心正态分布是该变换的不动点。导数在不可导的 Lebesgue 零测集上可任意作可测定义；构造须说明为何此约定不影响结论。
+
+\subsection*{PROB-XJS-12-006（L6，原书 12.6）}
+设 $\mu,\nu$ 为同一可测空间上的概率测度。若 $\mu\ll\nu$，定义 $D(\mu\|\nu)=\int h\log h\,d\nu$，其中 $h=d\mu/d\nu$，约定 $0\log0=0$；否则定义为 $+\infty$。证明 $D\ge0$，等号当且仅当 $\mu=\nu$，并证明 $D$ 对每个变量分别凸。再设 $\phi$ 为有界实可测函数、$\beta\in\mathbb R$，$Z=\int e^{-\beta\phi}d\nu$、$d\nu_*=e^{-\beta\phi}d\nu/Z$，$a=\int\phi d\nu_*$。证明在 $\int\phi d\mu=a$ 的约束下，$D(\mu\|\nu)$ 唯一地在 $\nu_*$ 取最小值。
+
+\subsection*{PROB-XJS-12-007（L7，原书 12.7）}
+采用自然对数，$H(X)=-\sum_xp_x\log p_x$，约定 $0\log0=0$。证明：(1) 值域包含于给定 $N\ge1$ 个点时，$0\le H(X)\le\log N$，并给出两端等号条件；(2) 在所有正整数值、均值为 $1/p$（$0<p<1$）的分布中，熵唯一地由几何分布 $q_k=p(1-p)^{k-1}$、$k\ge1$ 最大化；(3) 对有限值域的 $X$ 及其值域上的任意函数 $\psi$，$H(\psi(X))\le H(X)$，并给出等号条件；(4) 对有限值域的 $X,Y$，定义 $H(X\mid Y)=\sum_y\mathbb P(Y=y)H(X\mid Y=y)$，证明链式法则及 $H(X\mid Y)\le H(X)$，并给出不等式的等号条件。
+
+\subsection*{PROB-XJS-12-008（L6，原书 12.8）}
+对密度为 $f$ 的实随机变量，只有在 Lebesgue 积分有定义时才记微分熵 $h(X)=-\int f\log f$，允许扩展实数值，约定 $0\log0=0$。证明：(1) 在 $h(X)$ 有定义时，$h(X-a)=h(X)$、$h(kX)=h(X)+\log|k|$（$a\in\mathbb R$、$k\ne0$）；(2) 构造熵分别为有限正数、有限负数的密度；(3) 在所有非负、均值1且有密度的分布中，证明微分熵总有定义、不会为 $+\infty$，且由标准指数分布唯一最大化；(4) 在所有均值0、方差1且有密度的分布中，证明相同的有定义性和唯一最大化结论，其中最大熵分布为标准正态。
+
+\subsection*{PROB-XJS-A-005（L4，原书 A.5）}
+设 $\mathcal G_1,\mathcal G_2,\mathcal G_3$ 为相互独立的三个子 $\sigma$-代数。证明 $\mathcal G_1\vee\mathcal G_2$ 与 $\mathcal G_3$ 独立。
+
+\subsection*{PROB-XJS-B-002（L6，原书 B.2）}
+证明正态分布 $N(\mu,\sigma^2)$（$\sigma\ge0$）由全部非负整数阶矩唯一确定。不能只因正态分布自身的矩母函数存在就直接断言竞争分布也具有同样矩母函数。
+
+\subsection*{PROB-XJS-B-005（L7，原书 B.5）}
+设 $Z\sim N(0,1)$，$X=e^Z$。构造与 $X$ 分布不同、但具有相同全部非负整数阶矩的概率分布，证明对数标准正态分布不由其各阶矩唯一确定。
+
+\subsection*{PROB-XJS-C-002（L6，原书 C.2）}
+设 $(B_t)_{0\le t\le1}$ 为标准 Brown 运动，$W_t=B_t-tB_1$。证明 $W$ 为均值0、协方差 $\min(s,t)-st$ 的连续 Gauss 过程，并说明其路径分布等于 $B$ 在端点 $B_1=0$ 下的正规条件分布。必须解释零概率事件的条件化含义。
+
+\end{document}

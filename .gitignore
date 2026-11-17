@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+runs/
+dist/
+*.zip
+*.pdf
+*.png
+*.html
+*.log
+*.aux
+*.out
+*.synctex.gz
